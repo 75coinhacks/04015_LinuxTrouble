@@ -1,0 +1,1 @@
+"PROCESSED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
