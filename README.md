@@ -16,6 +16,8 @@ OUTPUT_FILE="$OUTPUT_DIR/fruits_processed.txt" stores the final output file path
 
 mkdir -p "$OUTPUT_DIR"
 
+echo "I need to pass this class. $(whoami), with an original." >> survive.txt
+
 # see if you can get the output on line 20 by intentionlly causing an error.
 mkdir -p [SOUTHPUT-DIR]
 if [ ! -f "$INPUT_FILE" ]; then
@@ -28,5 +30,10 @@ echo "Processing file..."
 # 
 while IFS= read -r line
 do
-    
-    processed_line="PROCESSED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
+
+processed_line="PROCESSED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
+#Moving Selected Files
+
+mv -v processed_line.txt $BACKUP_DIR/
+
+
