@@ -32,23 +32,6 @@ do
 processed_line="PROCESSED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
 #Moving Selected Files
 
-#Listing everything in the directory, with some flags. 
-
-ls -lta
-
-#Copying
-cp -v survive.txt $BACKUP_DIR/
-
-#Moving Selected Files
-
-mv -v survive.txt $BACKUP_DIR/
-
-#Removing Files and Directories
-
-rm -v $BACKUP_DIR/survive.txt
-
-mv -v processed_line.txt $BACKUP_DIR/
-
 #Processed output is also placed into the archive    
 processed_line="PROCESSED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
 archived_line="ARCHIVED: $(echo "$line" | tr '[:lower:]' '[:upper:]')"
@@ -61,5 +44,4 @@ echo "Done!"
 echo "Processed lines have been saved to: $OUTPUT_FILE"
 echo "Processed lines have been saved to: $ARCHIVE_FILE"
 
-cat final_report.txt
 
