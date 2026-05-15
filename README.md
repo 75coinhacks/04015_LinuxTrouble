@@ -9,7 +9,7 @@
 
 ##Explain lines 11 - 13. What are they and where are they used later in the script?
 
-INPUT_FILE="input/fruits.txt" Storage the pathto the input file
+INPUT_FILE="input/fruits.txt" Storage the path to the input file
 OUTPUT_DIR="output" stores the output the folder name
 OUTPUT_FILE="$OUTPUT_DIR/fruits_processed.txt" stores the final output file path/ value becomes
 @VARIABLE_NAME
